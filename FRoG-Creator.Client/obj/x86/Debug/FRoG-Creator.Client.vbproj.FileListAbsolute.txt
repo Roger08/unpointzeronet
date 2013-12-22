@@ -1,0 +1,13 @@
+C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Client\bin\Debug\FRoG-Creator.Client.exe
+C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Client\bin\Debug\FRoG-Creator.Client.pdb
+C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Client\bin\Debug\FRoG-Creator.Client.xml
+C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Client\bin\Debug\FRoG-Creator.Format.dll
+C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Client\bin\Debug\FRoG-Creator.Format.pdb
+C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Client\bin\Debug\FRoG-Creator.Format.xml
+C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Client\obj\x86\Debug\FRoG_Creator.Client.Resources.resources
+C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Client\obj\x86\Debug\FRoG-Creator.Client.vbproj.GenerateResource.Cache
+C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Client\obj\x86\Debug\FRoG-Creator.Client.exe
+C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Client\obj\x86\Debug\FRoG-Creator.Client.xml
+C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Client\obj\x86\Debug\FRoG-Creator.Client.pdb
+C:\Users\Hugo\Documents\Visual Studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Client\obj\x86\Debug\FRoG-Creator.Client.vbprojResolveAssemblyReference.cache
+C:\Users\Hugo\Documents\Visual Studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Client\obj\x86\Debug\FRoG_Creator.Client.frmMainMenu.resources

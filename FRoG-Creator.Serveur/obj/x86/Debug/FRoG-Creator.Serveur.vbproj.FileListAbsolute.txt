@@ -1,0 +1,15 @@
+C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Serveur\bin\Debug\FRoG-Creator.Serveur.exe
+C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Serveur\bin\Debug\FRoG-Creator.Serveur.pdb
+C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Serveur\bin\Debug\FRoG-Creator.Serveur.xml
+C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Serveur\obj\x86\Debug\FRoG_Creator.Resources.resources
+C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Serveur\obj\x86\Debug\FRoG-Creator.Serveur.vbproj.GenerateResource.Cache
+C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Serveur\obj\x86\Debug\FRoG-Creator.Serveur.exe
+C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Serveur\obj\x86\Debug\FRoG-Creator.Serveur.xml
+C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Serveur\obj\x86\Debug\FRoG-Creator.Serveur.pdb
+C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Serveur\bin\Debug\FRoG-Creator.Format.dll
+C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Serveur\bin\Debug\FRoG-Creator.Format.pdb
+C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Serveur\bin\Debug\FRoG-Creator.Format.xml
+C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Serveur\obj\x86\Debug\FRoG-Creator.Serveur.vbprojResolveAssemblyReference.cache
+C:\Users\Hugo\Documents\Visual Studio 2010\Projects\unpointzero\FRoG-Creator.Serveur\obj\x86\Debug\FRoG-Creator.Serveur.exe
+C:\Users\Hugo\Documents\Visual Studio 2010\Projects\unpointzero\FRoG-Creator.Serveur\obj\x86\Debug\FRoG-Creator.Serveur.xml
+C:\Users\Hugo\Documents\Visual Studio 2010\Projects\unpointzero\FRoG-Creator.Serveur\obj\x86\Debug\FRoG-Creator.Serveur.pdb
