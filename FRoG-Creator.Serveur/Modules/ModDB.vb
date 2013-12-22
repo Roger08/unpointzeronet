@@ -9,7 +9,7 @@ Module ModDB
         Dim FluxFichier As Stream
         Dim Deserialiseur As New BinaryFormatter
 
-        FluxFichier = File.OpenRead("Comptes/" & username.ToLower & ".wotg")
+        FluxFichier = File.OpenRead("Comptes/" & username.ToLower & ".fcj")
         Player(index) = CType(Deserialiseur.Deserialize(FluxFichier), PlayerRec)
         FluxFichier.Close() : FluxFichier.Dispose()
     End Sub
@@ -25,7 +25,7 @@ Module ModDB
         Dim Serialiseur As New BinaryFormatter
 
         If Not Player(index).Username = Nothing Then
-            FluxFichier = File.Create("Comptes/" & Player(index).Username.ToLower & ".wotg")
+            FluxFichier = File.Create("Comptes/" & Player(index).Username.ToLower & ".fcj")
             Serialiseur.Serialize(FluxFichier, Player(index))
             FluxFichier.Close()
         End If
