@@ -7,7 +7,7 @@ Public Class frmMainMenu
         If Not txtInPseudo.Text.Length < 3 Then
             If Not txtInPswd.Text.Length < 5 Then
                 If txtInPswd.Text = txtInPswd2.Text Then
-                    ' TODO : Inscription
+                    ' TODO : Inscription :::: entete & sep & nom & sep & mdp
                 Else
                     MsgBox("Les mots de passe sont différents.", MsgBoxStyle.Critical, "Erreur")
                 End If
@@ -42,8 +42,11 @@ Public Class frmMainMenu
     End Sub
 
     Private Sub frmMainMenu_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-        ' -- Définitions tableaux --
-        ReDim PlayerTemp(MAX_PLAYERS)
-        ReDim Player(MAX_PLAYERS)
+
+    End Sub
+
+    Private Sub frmMainMenu_Shown(sender As Object, e As System.EventArgs) Handles Me.Shown
+        ' -- Initialisation --
+        Call Init()
     End Sub
 End Class

@@ -52,7 +52,7 @@ Module ModNetwork
     End Sub
 
     ' - Récéption du paquet
-    Public Sub ReceivePaquets()
+    Public Sub ReceivePackets()
 
         ' - Variables utilisées pour la récéption + le traitement du paquet
         Dim PacketByte() As Byte

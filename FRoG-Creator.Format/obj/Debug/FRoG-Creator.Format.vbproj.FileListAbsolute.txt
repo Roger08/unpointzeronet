@@ -6,3 +6,11 @@ C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Cr
 C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Format\obj\Debug\FRoG-Creator.Format.dll
 C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Format\obj\Debug\FRoG-Creator.Format.xml
 C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Format\obj\Debug\FRoG-Creator.Format.pdb
+C:\Users\Hugo\Documents\GitHub\unpointzeronet\FRoG-Creator.Format\bin\Debug\FRoG-Creator.Format.dll
+C:\Users\Hugo\Documents\GitHub\unpointzeronet\FRoG-Creator.Format\bin\Debug\FRoG-Creator.Format.pdb
+C:\Users\Hugo\Documents\GitHub\unpointzeronet\FRoG-Creator.Format\bin\Debug\FRoG-Creator.Format.xml
+C:\Users\Hugo\Documents\GitHub\unpointzeronet\FRoG-Creator.Format\obj\Debug\FRoG_Creator.Format.Resources.resources
+C:\Users\Hugo\Documents\GitHub\unpointzeronet\FRoG-Creator.Format\obj\Debug\FRoG-Creator.Format.vbproj.GenerateResource.Cache
+C:\Users\Hugo\Documents\GitHub\unpointzeronet\FRoG-Creator.Format\obj\Debug\FRoG-Creator.Format.dll
+C:\Users\Hugo\Documents\GitHub\unpointzeronet\FRoG-Creator.Format\obj\Debug\FRoG-Creator.Format.xml
+C:\Users\Hugo\Documents\GitHub\unpointzeronet\FRoG-Creator.Format\obj\Debug\FRoG-Creator.Format.pdb
