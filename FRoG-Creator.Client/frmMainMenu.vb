@@ -40,4 +40,10 @@ Public Class frmMainMenu
         pnlLogin.Visible = True
         pnlRegister.Visible = False
     End Sub
+
+    Private Sub frmMainMenu_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        ' -- Définitions tableaux --
+        ReDim PlayerTemp(MAX_PLAYERS)
+        ReDim Player(MAX_PLAYERS)
+    End Sub
 End Class

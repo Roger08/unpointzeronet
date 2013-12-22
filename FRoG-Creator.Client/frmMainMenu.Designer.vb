@@ -23,15 +23,17 @@ Partial Class frmMainMenu
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.pnlLogin = New System.Windows.Forms.Panel()
-        Me.txtPseudo = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtpswd = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtPseudo = New System.Windows.Forms.TextBox()
         Me.pnlRegister = New System.Windows.Forms.Panel()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.txtInPswd2 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -39,8 +41,6 @@ Partial Class frmMainMenu
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.txtInPseudo = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.txtInPswd2 = New System.Windows.Forms.TextBox()
         Me.pnlLogin.SuspendLayout()
         Me.pnlRegister.SuspendLayout()
         Me.SuspendLayout()
@@ -60,30 +60,33 @@ Partial Class frmMainMenu
         Me.pnlLogin.Size = New System.Drawing.Size(397, 383)
         Me.pnlLogin.TabIndex = 0
         '
-        'txtPseudo
+        'CheckBox1
         '
-        Me.txtPseudo.Location = New System.Drawing.Point(27, 123)
-        Me.txtPseudo.Name = "txtPseudo"
-        Me.txtPseudo.Size = New System.Drawing.Size(345, 20)
-        Me.txtPseudo.TabIndex = 0
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(27, 230)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(151, 17)
+        Me.CheckBox1.TabIndex = 6
+        Me.CheckBox1.Text = "Mémoriser le mot de passe"
+        Me.CheckBox1.UseVisualStyleBackColor = True
         '
-        'Label1
+        'Label4
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(24, 107)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(74, 13)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Pseudonyme :"
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(218, 284)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(156, 13)
+        Me.Label4.TabIndex = 5
+        Me.Label4.Text = "Pas encore inscrit ? Cliquez ici !"
         '
-        'Label2
+        'Button1
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(177, 33)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(57, 13)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Connexion"
+        Me.Button1.Location = New System.Drawing.Point(271, 253)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(100, 26)
+        Me.Button1.TabIndex = 4
+        Me.Button1.Text = "Connexion"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Label3
         '
@@ -102,33 +105,30 @@ Partial Class frmMainMenu
         Me.txtpswd.Size = New System.Drawing.Size(345, 20)
         Me.txtpswd.TabIndex = 2
         '
-        'Button1
+        'Label2
         '
-        Me.Button1.Location = New System.Drawing.Point(271, 253)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(100, 26)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Connexion"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(177, 33)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(57, 13)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Connexion"
         '
-        'Label4
+        'Label1
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(218, 284)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(156, 13)
-        Me.Label4.TabIndex = 5
-        Me.Label4.Text = "Pas encore inscrit ? Cliquez ici !"
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(24, 107)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(74, 13)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Pseudonyme :"
         '
-        'CheckBox1
+        'txtPseudo
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(27, 230)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(151, 17)
-        Me.CheckBox1.TabIndex = 6
-        Me.CheckBox1.Text = "Mémoriser le mot de passe"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.txtPseudo.Location = New System.Drawing.Point(27, 123)
+        Me.txtPseudo.Name = "txtPseudo"
+        Me.txtPseudo.Size = New System.Drawing.Size(345, 20)
+        Me.txtPseudo.TabIndex = 0
         '
         'pnlRegister
         '
@@ -146,6 +146,23 @@ Partial Class frmMainMenu
         Me.pnlRegister.Size = New System.Drawing.Size(397, 383)
         Me.pnlRegister.TabIndex = 1
         Me.pnlRegister.Visible = False
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(24, 243)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(130, 13)
+        Me.Label9.TabIndex = 7
+        Me.Label9.Text = "Retapez le mot de passe :"
+        '
+        'txtInPswd2
+        '
+        Me.txtInPswd2.Location = New System.Drawing.Point(27, 259)
+        Me.txtInPswd2.Name = "txtInPswd2"
+        Me.txtInPswd2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
+        Me.txtInPswd2.Size = New System.Drawing.Size(345, 20)
+        Me.txtInPswd2.TabIndex = 6
         '
         'Label5
         '
@@ -206,23 +223,6 @@ Partial Class frmMainMenu
         Me.txtInPseudo.Name = "txtInPseudo"
         Me.txtInPseudo.Size = New System.Drawing.Size(345, 20)
         Me.txtInPseudo.TabIndex = 0
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(24, 243)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(130, 13)
-        Me.Label9.TabIndex = 7
-        Me.Label9.Text = "Retapez le mot de passe :"
-        '
-        'txtInPswd2
-        '
-        Me.txtInPswd2.Location = New System.Drawing.Point(27, 259)
-        Me.txtInPswd2.Name = "txtInPswd2"
-        Me.txtInPswd2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
-        Me.txtInPswd2.Size = New System.Drawing.Size(345, 20)
-        Me.txtInPswd2.TabIndex = 6
         '
         'frmMainMenu
         '

@@ -2,6 +2,7 @@
     Sub Main()
         ' -- Définitions tableaux --
         ReDim PlayerTemp(MAX_PLAYERS)
+        ReDim Player(MAX_PLAYERS)
 
         ' -- Chargement serveur --
         Call Init()
