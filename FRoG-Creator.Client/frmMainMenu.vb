@@ -7,7 +7,7 @@ Public Class frmMainMenu
         If Not txtInPseudo.Text.Length < 3 Then
             If Not txtInPswd.Text.Length < 5 Then
                 If txtInPswd.Text = txtInPswd2.Text Then
-                    ' TODO : Inscription :::: entete & sep & nom & sep & mdp
+                    SendPacket(ClientPacket.Register & SEP & txtInPseudo.Text & SEP & txtInPswd.Text)
                 Else
                     MsgBox("Les mots de passe sont différents.", MsgBoxStyle.Critical, "Erreur")
                 End If
@@ -22,7 +22,7 @@ Public Class frmMainMenu
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
         If Not txtPseudo.Text.Length < 3 Then
             If Not txtpswd.Text.Length < 5 Then
-                ' TODO : Connexion
+                SendPacket(ClientPacket.Login & SEP & txtPseudo.Text & SEP & txtpswd.Text)
             Else
                 MsgBox("Votre mot de passe doit faire au moins 5 caractères", MsgBoxStyle.Critical, "Erreur")
             End If

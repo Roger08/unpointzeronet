@@ -16,3 +16,16 @@ C:\Users\Hugo\Documents\Visual Studio 2010\Projects\unpointzero\FRoG-Creator.Ser
 C:\Users\Hugo\Documents\GitHub\unpointzeronet\FRoG-Creator.Serveur\obj\x86\Debug\FRoG-Creator.Serveur.exe
 C:\Users\Hugo\Documents\GitHub\unpointzeronet\FRoG-Creator.Serveur\obj\x86\Debug\FRoG-Creator.Serveur.xml
 C:\Users\Hugo\Documents\GitHub\unpointzeronet\FRoG-Creator.Serveur\obj\x86\Debug\FRoG-Creator.Serveur.pdb
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Serveur\obj\x86\Debug\FRoG-Creator.Serveur.exe
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Serveur\obj\x86\Debug\FRoG-Creator.Serveur.xml
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Serveur\obj\x86\Debug\FRoG-Creator.Serveur.pdb
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Serveur\bin\Debug\FRoG-Creator.Serveur.exe
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Serveur\bin\Debug\FRoG-Creator.Serveur.pdb
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Serveur\bin\Debug\FRoG-Creator.Serveur.xml
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Serveur\bin\Debug\FRoG-Creator.Format.dll
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Serveur\bin\Debug\FRoG-Creator.Format.pdb
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Serveur\bin\Debug\FRoG-Creator.Format.xml
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Serveur\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Serveur\obj\x86\Debug\FRoG_Creator.Resources.resources
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Serveur\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Serveur\obj\x86\Debug\GenerateResource.write.1.tlog

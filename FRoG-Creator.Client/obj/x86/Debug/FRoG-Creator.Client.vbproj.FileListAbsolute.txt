@@ -24,3 +24,17 @@ C:\Users\Hugo\Documents\GitHub\unpointzeronet\FRoG-Creator.Client\obj\x86\Debug\
 C:\Users\Hugo\Documents\GitHub\unpointzeronet\FRoG-Creator.Client\obj\x86\Debug\FRoG_Creator.Client.frmMainMenu.resources
 C:\Users\Hugo\Documents\GitHub\unpointzeronet\FRoG-Creator.Client\obj\x86\Debug\FRoG_Creator.Client.Resources.resources
 C:\Users\Hugo\Documents\GitHub\unpointzeronet\FRoG-Creator.Client\obj\x86\Debug\FRoG-Creator.Client.vbproj.GenerateResource.Cache
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Client\bin\Debug\FRoG-Creator.Client.exe
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Client\bin\Debug\FRoG-Creator.Client.pdb
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Client\bin\Debug\FRoG-Creator.Client.xml
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Client\bin\Debug\FRoG-Creator.Format.dll
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Client\bin\Debug\FRoG-Creator.Format.pdb
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Client\bin\Debug\FRoG-Creator.Format.xml
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Client\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Client\obj\x86\Debug\FRoG_Creator.Client.frmMainMenu.resources
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Client\obj\x86\Debug\FRoG_Creator.Client.Resources.resources
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Client\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Client\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Client\obj\x86\Debug\FRoG-Creator.Client.exe
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Client\obj\x86\Debug\FRoG-Creator.Client.xml
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Client\obj\x86\Debug\FRoG-Creator.Client.pdb
