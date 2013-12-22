@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Modules\ModBuffers.vb" />
+    <Compile Include="Modules\ModDB.vb" />
     <Compile Include="Modules\ModEnum.vb" />
     <Compile Include="ModPrgm.vb" />
     <Compile Include="Modules\ModFunctions.vb" />

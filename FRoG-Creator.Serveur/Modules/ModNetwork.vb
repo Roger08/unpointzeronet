@@ -4,6 +4,7 @@ Imports System.Net.Sockets
 Imports System.Threading
 Imports System.Threading.Tasks
 Imports System.Text
+Imports System.IO
 
 ' ######################################
 ' ##         FRoG Creator 1.0         ##
@@ -154,6 +155,20 @@ Module ModNetwork
     End Sub
 
     Public Sub Register(ByVal index As Integer, ByVal Datas As String)
+        ' Récupère le corps du paquet
+        Dim Data() As String = Datas.Split(SEP)
 
+        If Not Data(1).Length < 3 Or Not Data(2).Length < 3 Then
+            If Not File.Exists("Comptes/" & Data(1).ToLower & ".wotg") Then
+                Player(index).Username = Data(1)
+                Player(index).Password = Data(2)
+                Call SavePlayer(index)
+                Call ShowInfo("Le compte " & Data(1) & " vient d'être créé")
+                Call ClearPlayer(index)
+                'Call EnvoyerBonMessage(index, "Votre compte vient d'être créé !")
+            Else
+                'Call EnvoyerMauvaisMessage(index, "Le compte existe déjà !")
+            End If
+        End If
     End Sub
 End Module
