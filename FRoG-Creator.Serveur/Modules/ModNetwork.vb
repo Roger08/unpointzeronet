@@ -31,6 +31,7 @@ Module ModNetwork
     ' - Initialisation des différents paquets provenant du client
     Public Sub InitPackets()
         PaquetHandler.Add(ClientPacket.Login, AddressOf Login)
+        PaquetHandler.Add(ClientPacket.Register, AddressOf Register)
     End Sub
 
     ' - Accepte un client de manière asynchrone
@@ -152,4 +153,7 @@ Module ModNetwork
 
     End Sub
 
+    Public Sub Register(ByVal index As Integer, ByVal Datas As String)
+
+    End Sub
 End Module

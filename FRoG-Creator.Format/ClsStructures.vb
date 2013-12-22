@@ -15,4 +15,10 @@ Public Class ClsStructures
         Dim InGame As Boolean
     End Structure
 
+    <Serializable()>
+    Public Structure PlayerRec
+        Dim Username As String
+        Dim Password As String
+    End Structure
+
 End Class

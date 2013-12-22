@@ -13,3 +13,6 @@ C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Cr
 C:\Users\Hugo\Documents\Visual Studio 2010\Projects\unpointzero\FRoG-Creator.Serveur\obj\x86\Debug\FRoG-Creator.Serveur.exe
 C:\Users\Hugo\Documents\Visual Studio 2010\Projects\unpointzero\FRoG-Creator.Serveur\obj\x86\Debug\FRoG-Creator.Serveur.xml
 C:\Users\Hugo\Documents\Visual Studio 2010\Projects\unpointzero\FRoG-Creator.Serveur\obj\x86\Debug\FRoG-Creator.Serveur.pdb
+C:\Users\Hugo\Documents\GitHub\unpointzeronet\FRoG-Creator.Serveur\obj\x86\Debug\FRoG-Creator.Serveur.exe
+C:\Users\Hugo\Documents\GitHub\unpointzeronet\FRoG-Creator.Serveur\obj\x86\Debug\FRoG-Creator.Serveur.xml
+C:\Users\Hugo\Documents\GitHub\unpointzeronet\FRoG-Creator.Serveur\obj\x86\Debug\FRoG-Creator.Serveur.pdb

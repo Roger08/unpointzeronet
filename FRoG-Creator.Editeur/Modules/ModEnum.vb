@@ -4,6 +4,7 @@
     Public Enum ClientPacket As Byte
         ' Client
         Login
+        Register
 
         ' Editeur
         ELogin
@@ -13,6 +14,7 @@
     Public Enum ServerPacket As Byte
         ' Client
         LoginReturn
+        RegisterReturn
 
         ' Editeur
         ELoginReturn

@@ -11,3 +11,6 @@ C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Cr
 C:\Users\Hugo\documents\visual studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Client\obj\x86\Debug\FRoG-Creator.Client.pdb
 C:\Users\Hugo\Documents\Visual Studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Client\obj\x86\Debug\FRoG-Creator.Client.vbprojResolveAssemblyReference.cache
 C:\Users\Hugo\Documents\Visual Studio 2010\Projects\FRoG-Creator.Serveur\FRoG-Creator.Client\obj\x86\Debug\FRoG_Creator.Client.frmMainMenu.resources
+C:\Users\Hugo\Documents\GitHub\unpointzeronet\FRoG-Creator.Client\obj\x86\Debug\FRoG-Creator.Client.exe
+C:\Users\Hugo\Documents\GitHub\unpointzeronet\FRoG-Creator.Client\obj\x86\Debug\FRoG-Creator.Client.xml
+C:\Users\Hugo\Documents\GitHub\unpointzeronet\FRoG-Creator.Client\obj\x86\Debug\FRoG-Creator.Client.pdb
