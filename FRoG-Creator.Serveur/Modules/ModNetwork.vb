@@ -158,8 +158,8 @@ Module ModNetwork
         ' Récupère le corps du paquet
         Dim Data() As String = Datas.Split(SEP)
 
-        If Not Data(1).Length < 3 Or Not Data(2).Length < 3 Then
-            If Not File.Exists("Comptes/" & Data(1).ToLower & ".wotg") Then
+        If Not Data(1).Length < 3 Or Not Data(2).Length < 5 Then
+            If Not File.Exists("Comptes/" & Data(1).ToLower & ".fcj") Then
                 Player(index).Username = Data(1)
                 Player(index).Password = Data(2)
                 Call SavePlayer(index)

@@ -47,6 +47,7 @@ Partial Class frmMainMenu
         '
         'pnlLogin
         '
+        Me.pnlLogin.Controls.Add(Me.pnlRegister)
         Me.pnlLogin.Controls.Add(Me.CheckBox1)
         Me.pnlLogin.Controls.Add(Me.Label4)
         Me.pnlLogin.Controls.Add(Me.Button1)
@@ -66,7 +67,7 @@ Partial Class frmMainMenu
         Me.CheckBox1.Location = New System.Drawing.Point(27, 230)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(151, 17)
-        Me.CheckBox1.TabIndex = 6
+        Me.CheckBox1.TabIndex = 12
         Me.CheckBox1.Text = "Mémoriser le mot de passe"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
@@ -84,7 +85,7 @@ Partial Class frmMainMenu
         Me.Button1.Location = New System.Drawing.Point(271, 253)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(100, 26)
-        Me.Button1.TabIndex = 4
+        Me.Button1.TabIndex = 13
         Me.Button1.Text = "Connexion"
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -103,7 +104,7 @@ Partial Class frmMainMenu
         Me.txtpswd.Name = "txtpswd"
         Me.txtpswd.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.txtpswd.Size = New System.Drawing.Size(345, 20)
-        Me.txtpswd.TabIndex = 2
+        Me.txtpswd.TabIndex = 11
         '
         'Label2
         '
@@ -128,7 +129,7 @@ Partial Class frmMainMenu
         Me.txtPseudo.Location = New System.Drawing.Point(27, 123)
         Me.txtPseudo.Name = "txtPseudo"
         Me.txtPseudo.Size = New System.Drawing.Size(345, 20)
-        Me.txtPseudo.TabIndex = 0
+        Me.txtPseudo.TabIndex = 10
         '
         'pnlRegister
         '
@@ -141,7 +142,7 @@ Partial Class frmMainMenu
         Me.pnlRegister.Controls.Add(Me.Label7)
         Me.pnlRegister.Controls.Add(Me.Label8)
         Me.pnlRegister.Controls.Add(Me.txtInPseudo)
-        Me.pnlRegister.Location = New System.Drawing.Point(117, 56)
+        Me.pnlRegister.Location = New System.Drawing.Point(0, 0)
         Me.pnlRegister.Name = "pnlRegister"
         Me.pnlRegister.Size = New System.Drawing.Size(397, 383)
         Me.pnlRegister.TabIndex = 1
@@ -162,7 +163,7 @@ Partial Class frmMainMenu
         Me.txtInPswd2.Name = "txtInPswd2"
         Me.txtInPswd2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.txtInPswd2.Size = New System.Drawing.Size(345, 20)
-        Me.txtInPswd2.TabIndex = 6
+        Me.txtInPswd2.TabIndex = 2
         '
         'Label5
         '
@@ -178,7 +179,7 @@ Partial Class frmMainMenu
         Me.Button2.Location = New System.Drawing.Point(271, 297)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(100, 26)
-        Me.Button2.TabIndex = 4
+        Me.Button2.TabIndex = 3
         Me.Button2.Text = "Inscription"
         Me.Button2.UseVisualStyleBackColor = True
         '
@@ -197,7 +198,7 @@ Partial Class frmMainMenu
         Me.txtInPswd.Name = "txtInPswd"
         Me.txtInPswd.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.txtInPswd.Size = New System.Drawing.Size(345, 20)
-        Me.txtInPswd.TabIndex = 2
+        Me.txtInPswd.TabIndex = 1
         '
         'Label7
         '
@@ -229,7 +230,6 @@ Partial Class frmMainMenu
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(650, 522)
-        Me.Controls.Add(Me.pnlRegister)
         Me.Controls.Add(Me.pnlLogin)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "frmMainMenu"
