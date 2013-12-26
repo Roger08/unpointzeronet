@@ -162,19 +162,21 @@ Module ModNetwork
         ' (LOGIN SEP MOT_DE_PASSE)
         Dim Data() As String = Datas.Split(SEP)
 
-        If File.Exists("Comptes/" & Data(1).ToLower & ".fcj") Then
-            Call LoadPlayer(index, Data(1))
-            If Player(index).Password = Data(2) Then
-                If Not PlayerTemp(index).InGame Then
-                    'TODO : Envoyer les infos au client
+        If Not Data(1).Length < 3 Or Not Data(2).Length < 5 Then
+            If File.Exists("Comptes/" & Data(1).ToLower & ".fcj") Then
+                Call LoadPlayer(index, Data(1))
+                If Player(index).Password = Data(2) Then
+                    If Not PlayerTemp(index).InGame Then
+                        'TODO : Envoyer les infos au client
+                    Else
+                        Call SendMessage(index, ClientMessageType.Fatal, "Le joueur est déjà connecté !")
+                    End If
                 Else
-                    Call SendMessage(index, ClientMessageType.Fatal, "Le joueur est déjà connecté !")
+                    Call SendMessage(index, ClientMessageType.Fatal, "Identifiants incorrects !")
                 End If
             Else
                 Call SendMessage(index, ClientMessageType.Fatal, "Identifiants incorrects !")
             End If
-        Else
-            Call SendMessage(index, ClientMessageType.Fatal, "Identifiants incorrects !")
         End If
     End Sub
 
