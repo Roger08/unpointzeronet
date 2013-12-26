@@ -20,12 +20,12 @@ Module ModNetwork
             End
         End Try
         _Stream = New NetworkStream(_Socket)
-        'Call Gameloop()
+        Call Gameloop()
     End Sub
 
     ' - Initialisation des différents paquets provenant du serveur
     Public Sub InitPackets()
-        'PaquetHandler.Add(PaquetServeur.BonMSG, AddressOf BonMessage)
+        PaquetHandler.Add(ServerPacket.Message, AddressOf DispMessage)
     End Sub
 
     ' - Deconnecte le client
@@ -88,4 +88,22 @@ Module ModNetwork
             End If
         End With
     End Sub
+
+#Region "Actions necessitant des paquets"
+
+#End Region
+
+#Region "Actions enclenchées par les paquets"
+    Public Sub DispMessage(ByVal Datas As String)
+        ' Récupère le corps du paquet
+        Dim Data() As String = Datas.Split(SEP)
+
+        If Data(1) = ClientMessageType.Fatal Then
+            MsgBox(Data(2), MsgBoxStyle.Critical, "Erreur")
+        ElseIf Data(1) = ClientMessageType.Info Then
+            MsgBox(Data(2), MsgBoxStyle.Information, "Information")
+        End If
+    End Sub
+#End Region
+
 End Module

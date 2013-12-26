@@ -81,6 +81,7 @@
     </Compile>
     <Compile Include="Modules\ModDB.vb" />
     <Compile Include="Modules\ModEnum.vb" />
+    <Compile Include="Modules\ModGame.vb" />
     <Compile Include="Modules\ModNetwork.vb" />
     <Compile Include="Modules\ModVar.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

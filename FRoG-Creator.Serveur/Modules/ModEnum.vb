@@ -22,9 +22,16 @@ Module ModEnum
         ' Client
         LoginReturn
         RegisterReturn
+        Message
 
         ' Editeur
         ELoginReturn
+    End Enum
+
+    ' -- Types de messages affichés par le client/l'éditeur --
+    Public Enum ClientMessageType As Byte
+        Fatal
+        Info
     End Enum
 
 End Module
