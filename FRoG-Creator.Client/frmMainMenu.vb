@@ -34,11 +34,16 @@ Public Class frmMainMenu
     Private Sub Label4_Click(sender As System.Object, e As System.EventArgs) Handles Label4.Click
         pnlLogin.Visible = False
         pnlRegister.Visible = True
+        txtInPseudo.Text = Nothing
+        txtInPswd.Text = Nothing
+        txtInPswd2.Text = Nothing
     End Sub
 
     Private Sub Label5_Click(sender As System.Object, e As System.EventArgs) Handles Label5.Click
         pnlLogin.Visible = True
         pnlRegister.Visible = False
+        txtPseudo.Text = Nothing
+        txtpswd.Text = Nothing
     End Sub
 
     Private Sub frmMainMenu_Shown(sender As Object, e As System.EventArgs) Handles Me.Shown

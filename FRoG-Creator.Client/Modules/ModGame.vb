@@ -9,6 +9,8 @@
             If PlayerTemp(MyIndex).InGame Then
                 ' - Rafraichissement de l'image
             End If
+
+            Application.DoEvents()
         End While
     End Sub
 End Module
