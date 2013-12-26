@@ -41,10 +41,6 @@ Public Class frmMainMenu
         pnlRegister.Visible = False
     End Sub
 
-    Private Sub frmMainMenu_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Private Sub frmMainMenu_Shown(sender As Object, e As System.EventArgs) Handles Me.Shown
         ' -- Initialisation --
         Call Init()

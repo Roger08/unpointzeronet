@@ -151,7 +151,24 @@ Module ModNetwork
     End Sub
 
     Public Sub Login(ByVal index As Integer, ByVal Datas As String)
+        ' Récupère le corps du paquet
+        ' (LOGIN SEP MOT_DE_PASSE)
+        Dim Data() As String = Datas.Split(SEP)
 
+        If File.Exists("Comptes/" & Data(1).ToLower & ".fcj") Then
+            Call LoadPlayer(index, Data(1))
+            If Player(index).Password = Data(2) Then
+                If Not PlayerTemp(index).InGame Then
+                    'TODO : Envoyer les infos au client
+                Else
+                    'TODO : Envoyer au client Le joueur est déjà connecté.
+                End If
+            Else
+                'TODO : Envoyer au client Mot de passe incorrect.
+            End If
+        Else
+            'TODO : Envoyer au client Le compte n'existe pas.
+        End If
     End Sub
 
     Public Sub Register(ByVal index As Integer, ByVal Datas As String)

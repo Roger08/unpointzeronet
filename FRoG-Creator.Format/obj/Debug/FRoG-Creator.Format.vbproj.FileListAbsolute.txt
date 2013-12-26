@@ -14,3 +14,13 @@ C:\Users\Hugo\Documents\GitHub\unpointzeronet\FRoG-Creator.Format\obj\Debug\FRoG
 C:\Users\Hugo\Documents\GitHub\unpointzeronet\FRoG-Creator.Format\obj\Debug\FRoG-Creator.Format.dll
 C:\Users\Hugo\Documents\GitHub\unpointzeronet\FRoG-Creator.Format\obj\Debug\FRoG-Creator.Format.xml
 C:\Users\Hugo\Documents\GitHub\unpointzeronet\FRoG-Creator.Format\obj\Debug\FRoG-Creator.Format.pdb
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Format\bin\Debug\FRoG-Creator.Format.dll
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Format\bin\Debug\FRoG-Creator.Format.pdb
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Format\bin\Debug\FRoG-Creator.Format.xml
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Format\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Format\obj\Debug\FRoG_Creator.Format.Resources.resources
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Format\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Format\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Format\obj\Debug\FRoG-Creator.Format.dll
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Format\obj\Debug\FRoG-Creator.Format.xml
+C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Format\obj\Debug\FRoG-Creator.Format.pdb

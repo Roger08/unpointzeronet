@@ -19,6 +19,13 @@ Public Class ClsStructures
     Public Structure PlayerRec
         Dim Username As String
         Dim Password As String
+
+        Dim Charac() As CharRec
+    End Structure
+
+    <Serializable()>
+    Public Structure CharRec
+        Dim Name As String
     End Structure
 
 End Class
