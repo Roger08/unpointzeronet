@@ -26,6 +26,35 @@ Public Class ClsStructures
     <Serializable()>
     Public Structure CharRec
         Dim Name As String
+        Dim Sex As Byte
+        Dim Classe As Byte
+        Dim Level As Integer
+        Dim Exp As Integer
+        Dim Access As Byte
+
+        'Vie
+        Dim HP As Integer
+        Dim MP As Integer
+        Dim SP As Integer
+
+        'Position
+        Dim Map As Integer
+        Dim X As Integer
+        Dim Y As Integer
+        Dim Dir As Byte
+
+        'Statistiques
+        Dim STR As Integer
+        Dim DEF As Integer
+        Dim SPEED As Integer
+        Dim MAGI As Integer
+        Dim Points As Integer
+
+        Dim ArmorSlot As Integer
+        Dim WeaponSlot As Integer
+        Dim HelmetSlot As Integer
+        Dim ShieldSlot As Integer
+        Dim PetSlot As Integer
     End Structure
 
 End Class
