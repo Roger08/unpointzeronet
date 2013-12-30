@@ -119,29 +119,29 @@ Module ModNetwork
     End Sub
 
     ' - Envoyer un paquet à tous les clients
-    Public Sub SendToAllClients(ByVal Paquet As String)
+    Public Sub SendToAllClients(ByVal Packet As String)
         For i = 0 To LstIndex.Count - 1
-            Call EnvoyerPaquet(LstIndex(i), Paquet)
+            Call SendPacket(LstIndex(i), Packet)
         Next
     End Sub
 
     ' - Envoyer un paquet à tous les joueurs
-    Public Sub SendToAllPlayers(ByVal Paquet As String)
+    Public Sub SendToAllPlayers(ByVal Packet As String)
         For i = 0 To LstIndex.Count - 1
             If PlayerTemp(LstIndex(i)).InGame Then
-                Call EnvoyerPaquet(LstIndex(i), Paquet)
+                Call SendPacket(LstIndex(i), Packet)
             End If
         Next
     End Sub
 
     ' - Envoyer un Paquet à un client
-    Public Sub EnvoyerPaquet(ByVal index As Byte, ByVal Paquet As String)
-        Dim PaquetByte() As Byte
+    Public Sub SendPacket(ByVal index As Integer, ByVal Packet As String)
+        Dim PacketByte() As Byte
 
         If PlayerTemp(index).Connected Then
             Try
-                PaquetByte = ASCIIEncoding.UTF8.GetBytes(Paquet & SEP & FIN)
-                PlayerTemp(index).Stream.Write(PaquetByte, 0, PaquetByte.Length)
+                PacketByte = ASCIIEncoding.UTF8.GetBytes(Packet & SEP & FIN)
+                PlayerTemp(index).Stream.Write(PacketByte, 0, PacketByte.Length)
                 PlayerTemp(index).Stream.Flush()
                 Thread.Sleep(5)
             Catch
@@ -150,24 +150,33 @@ Module ModNetwork
         End If
     End Sub
 
+#Region "Actions necessitant des paquets"
+    Public Sub SendMessage(ByVal index As Integer, ByVal MessageType As Byte, ByVal Message As String)
+        Call SendPacket(index, ServerPacket.Message & SEP & MessageType & SEP & Message)
+    End Sub
+#End Region
+
+#Region "Actions enclenchées par les paquets"
     Public Sub Login(ByVal index As Integer, ByVal Datas As String)
         ' Récupère le corps du paquet
         ' (LOGIN SEP MOT_DE_PASSE)
         Dim Data() As String = Datas.Split(SEP)
 
-        If File.Exists("Comptes/" & Data(1).ToLower & ".fcj") Then
-            Call LoadPlayer(index, Data(1))
-            If Player(index).Password = Data(2) Then
-                If Not PlayerTemp(index).InGame Then
-                    'TODO : Envoyer les infos au client
+        If Not Data(1).Length < 3 Or Not Data(2).Length < 5 Then
+            If File.Exists("Comptes/" & Data(1).ToLower & ".fcj") Then
+                Call LoadPlayer(index, Data(1))
+                If Player(index).Password = Data(2) Then
+                    If Not PlayerTemp(index).InGame Then
+                        'TODO : Envoyer les infos au client
+                    Else
+                        Call SendMessage(index, ClientMessageType.Fatal, "Le joueur est déjà connecté !")
+                    End If
                 Else
-                    'TODO : Envoyer au client Le joueur est déjà connecté.
+                    Call SendMessage(index, ClientMessageType.Fatal, "Identifiants incorrects !")
                 End If
             Else
-                'TODO : Envoyer au client Mot de passe incorrect.
+                Call SendMessage(index, ClientMessageType.Fatal, "Identifiants incorrects !")
             End If
-        Else
-            'TODO : Envoyer au client Le compte n'existe pas.
         End If
     End Sub
 
@@ -182,10 +191,11 @@ Module ModNetwork
                 Call SavePlayer(index)
                 Call ShowInfo("Le compte " & Data(1) & " vient d'être créé")
                 Call ClearPlayer(index)
-                'Call EnvoyerBonMessage(index, "Votre compte vient d'être créé !")
+                Call SendMessage(index, ClientMessageType.Info, "Votre compte a bien été créé !")
             Else
-                'Call EnvoyerMauvaisMessage(index, "Le compte existe déjà !")
+                Call SendMessage(index, ClientMessageType.Fatal, "Ce compte existe déjà !")
             End If
         End If
     End Sub
+#End Region
 End Module
