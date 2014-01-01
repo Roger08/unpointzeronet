@@ -168,6 +168,7 @@ Module ModNetwork
                 If Player(index).Password = Data(2) Then
                     If Not PlayerTemp(index).InGame Then
                         'TODO : Envoyer les infos au client
+                        Call SendPacket(index, ServerPacket.LoginReturn & SEP & index)
                     Else
                         Call SendMessage(index, ClientMessageType.Fatal, "Le joueur est déjà connecté !")
                     End If

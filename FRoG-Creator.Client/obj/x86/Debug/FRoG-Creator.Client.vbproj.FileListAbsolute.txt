@@ -38,3 +38,4 @@ C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Client\obj\x86\Debu
 C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Client\obj\x86\Debug\FRoG-Creator.Client.exe
 C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Client\obj\x86\Debug\FRoG-Creator.Client.xml
 C:\Users\Samuel\Documents\GitHub\unpointzeronet\FRoG-Creator.Client\obj\x86\Debug\FRoG-Creator.Client.pdb
+C:\Users\Hugo\Documents\GitHub\unpointzeronet\FRoG-Creator.Client\obj\x86\Debug\FRoG_Creator.Client.frmCharSelect.resources

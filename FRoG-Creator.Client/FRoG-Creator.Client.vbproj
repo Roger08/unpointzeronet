@@ -72,6 +72,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCharSelect.Designer.vb">
+      <DependentUpon>frmCharSelect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCharSelect.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmMainMenu.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmCharSelect.resx">
+      <DependentUpon>frmCharSelect.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMainMenu.resx">
       <DependentUpon>frmMainMenu.vb</DependentUpon>
     </EmbeddedResource>

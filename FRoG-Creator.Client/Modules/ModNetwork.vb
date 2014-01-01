@@ -26,6 +26,7 @@ Module ModNetwork
     ' - Initialisation des différents paquets provenant du serveur
     Public Sub InitPackets()
         PaquetHandler.Add(ServerPacket.Message, AddressOf DispMessage)
+        PaquetHandler.Add(ServerPacket.LoginReturn, AddressOf LoginReturn)
     End Sub
 
     ' - Deconnecte le client
@@ -103,6 +104,15 @@ Module ModNetwork
         ElseIf Data(1) = ClientMessageType.Info Then
             MsgBox(Data(2), MsgBoxStyle.Information, "Information")
         End If
+    End Sub
+
+    Public Sub LoginReturn(ByVal Datas As String)
+        ' Récupère le corps du paquet
+        Dim Data() As String = Datas.Split(SEP)
+
+        MyIndex = Data(1)
+        frmCharSelect.Show()
+        frmMainMenu.Visible = False
     End Sub
 #End Region
 
