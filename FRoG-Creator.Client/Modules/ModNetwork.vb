@@ -27,6 +27,7 @@ Module ModNetwork
     Public Sub InitPackets()
         PaquetHandler.Add(ServerPacket.Message, AddressOf DispMessage)
         PaquetHandler.Add(ServerPacket.LoginReturn, AddressOf LoginReturn)
+        PaquetHandler.Add(ServerPacket.SendChars, AddressOf GetChars)
     End Sub
 
     ' - Deconnecte le client
@@ -110,9 +111,26 @@ Module ModNetwork
         ' Récupère le corps du paquet
         Dim Data() As String = Datas.Split(SEP)
 
-        MyIndex = Data(1)
         frmCharSelect.Show()
         frmMainMenu.Visible = False
+    End Sub
+
+    Public Sub GetChars(ByVal Datas As String)
+        ' Récupère le corps du paquet
+        Dim Data() As String = Datas.Split(SEP)
+
+        MyIndex = Data(1)
+        ReDim Player(MyIndex).Charac(MAX_CHARS)
+
+        For i = 0 To MAX_CHARS
+            Player(MyIndex).Charac(i).Name = Data(7 * i + 2)
+            Player(MyIndex).Charac(i).Level = Data(7 * i + 3)
+            Player(MyIndex).Charac(i).Classe = Data(7 * i + 4)
+            Player(MyIndex).Charac(i).Sex = Data(7 * i + 5)
+            Player(MyIndex).Charac(i).Map = Data(7 * i + 6)
+            Player(MyIndex).Charac(i).X = Data(7 * i + 7)
+            Player(MyIndex).Charac(i).Y = Data(7 * i + 8)
+        Next
     End Sub
 #End Region
 

@@ -154,6 +154,21 @@ Module ModNetwork
     Public Sub SendMessage(ByVal index As Integer, ByVal MessageType As Byte, ByVal Message As String)
         Call SendPacket(index, ServerPacket.Message & SEP & MessageType & SEP & Message)
     End Sub
+
+    Public Sub SendChars(ByVal index As Integer)
+        Dim Packet As String = ServerPacket.SendChars & SEP & index & SEP
+        ReDim Player(index).Charac(MAX_CHARS)
+        For i = 0 To MAX_CHARS
+            Packet = Packet & Player(index).Charac(i).Name & SEP
+            Packet = Packet & Player(index).Charac(i).Level & SEP
+            Packet = Packet & Player(index).Charac(i).Classe & SEP
+            Packet = Packet & Player(index).Charac(i).Sex & SEP
+            Packet = Packet & Player(index).Charac(i).Map & SEP
+            Packet = Packet & Player(index).Charac(i).X & SEP
+            Packet = Packet & Player(index).Charac(i).Y & SEP
+        Next
+        Call SendPacket(index, Packet)
+    End Sub
 #End Region
 
 #Region "Actions enclenchées par les paquets"
@@ -168,7 +183,8 @@ Module ModNetwork
                 If Player(index).Password = Data(2) Then
                     If Not PlayerTemp(index).InGame Then
                         'TODO : Envoyer les infos au client
-                        Call SendPacket(index, ServerPacket.LoginReturn & SEP & index)
+                        Call SendChars(index)
+                        Call SendPacket(index, ServerPacket.LoginReturn)
                     Else
                         Call SendMessage(index, ClientMessageType.Fatal, "Le joueur est déjà connecté !")
                     End If

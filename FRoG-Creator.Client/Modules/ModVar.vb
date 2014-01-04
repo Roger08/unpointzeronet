@@ -19,5 +19,6 @@ Module ModVar
 
     ' -- Variables Max --
     Public MAX_PLAYERS As Integer = 500
+    Public MAX_CHARS As Byte = 3
 
 End Module

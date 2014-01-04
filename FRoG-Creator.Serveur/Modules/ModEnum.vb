@@ -23,6 +23,7 @@ Module ModEnum
         LoginReturn
         RegisterReturn
         Message
+        SendChars
 
         ' Editeur
         ELoginReturn

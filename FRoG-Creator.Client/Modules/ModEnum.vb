@@ -13,6 +13,7 @@
         LoginReturn
         RegisterReturn
         Message
+        SendChars
     End Enum
 
     ' -- Types de messages affichés par le client/l'éditeur --

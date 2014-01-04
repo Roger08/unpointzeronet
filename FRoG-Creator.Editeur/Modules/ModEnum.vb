@@ -16,6 +16,7 @@
         LoginReturn
         RegisterReturn
         Message
+        SendChars
 
         ' Editeur
         ELoginReturn
