@@ -12,6 +12,7 @@ Module ModEnum
         ' Client
         Login
         Register
+        NewChar
 
         ' Editeur
         ELogin
@@ -24,6 +25,7 @@ Module ModEnum
         RegisterReturn
         Message
         SendChars
+        NewCharReturn
 
         ' Editeur
         ELoginReturn

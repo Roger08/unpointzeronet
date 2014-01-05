@@ -33,6 +33,7 @@ Module ModNetwork
     Public Sub InitPackets()
         PaquetHandler.Add(ClientPacket.Login, AddressOf Login)
         PaquetHandler.Add(ClientPacket.Register, AddressOf Register)
+        PaquetHandler.Add(ClientPacket.NewChar, AddressOf NewChar)
     End Sub
 
     ' - Accepte un client de manière asynchrone
@@ -213,6 +214,10 @@ Module ModNetwork
                 Call SendMessage(index, ClientMessageType.Fatal, "Ce compte existe déjà !")
             End If
         End If
+    End Sub
+
+    Public Sub NewChar(ByVal index As Integer, ByVal Datas As String)
+
     End Sub
 #End Region
 End Module

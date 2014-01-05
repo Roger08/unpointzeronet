@@ -5,6 +5,7 @@
         ' Client
         Login
         Register
+        NewChar
 
         ' Editeur
         ELogin
@@ -17,6 +18,7 @@
         RegisterReturn
         Message
         SendChars
+        NewCharReturns
 
         ' Editeur
         ELoginReturn

@@ -5,6 +5,7 @@
         ' Client
         Login
         Register
+        NewChar
     End Enum
 
     ' -- Paquets envoyés par le serveur --
@@ -14,6 +15,7 @@
         RegisterReturn
         Message
         SendChars
+        NewCharReturn
     End Enum
 
     ' -- Types de messages affichés par le client/l'éditeur --

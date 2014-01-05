@@ -35,7 +35,10 @@ Public Class frmCharSelect
 
         For i = 0 To 3
             If Not Player(MyIndex).Charac(i).Name = "" Then
-
+                With Player(MyIndex).Charac(i)
+                    Charlst(i).Item(1).text = .Name
+                    'TODO : Afficher les infos
+                End With
             Else
                 Charlst(i).Item(1).text = "Slot libre"
                 Charlst(i).Item(2).visible = False
@@ -47,18 +50,38 @@ Public Class frmCharSelect
     End Sub
 
     Private Sub btSelect1_Click(sender As System.Object, e As System.EventArgs) Handles btSelect1.Click
+        If Not Player(MyIndex).Charac(0).Name = "" Then
 
+        Else
+            frmNewChar.Show()
+            Me.Visible = False
+        End If
     End Sub
 
     Private Sub btSelect2_Click(sender As System.Object, e As System.EventArgs) Handles btSelect2.Click
+        If Not Player(MyIndex).Charac(1).Name = "" Then
 
+        Else
+            frmNewChar.Show()
+            Me.Visible = False
+        End If
     End Sub
 
     Private Sub btSelect3_Click(sender As System.Object, e As System.EventArgs) Handles btSelect3.Click
+        If Not Player(MyIndex).Charac(2).Name = "" Then
 
+        Else
+            frmNewChar.Show()
+            Me.Visible = False
+        End If
     End Sub
 
     Private Sub btSelect4_Click(sender As System.Object, e As System.EventArgs) Handles btSelect4.Click
+        If Not Player(MyIndex).Charac(3).Name = "" Then
 
+        Else
+            frmNewChar.Show()
+            Me.Visible = False
+        End If
     End Sub
 End Class
