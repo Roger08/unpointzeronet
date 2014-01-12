@@ -158,7 +158,7 @@ Module ModNetwork
 
     Public Sub SendChars(ByVal index As Integer)
         Dim Packet As String = ServerPacket.SendChars & SEP & index & SEP
-        ReDim Player(index).Charac(MAX_CHARS)
+        ReDim Preserve Player(index).Charac(MAX_CHARS)
         For i = 0 To MAX_CHARS
             Packet = Packet & Player(index).Charac(i).Name & SEP
             Packet = Packet & Player(index).Charac(i).Level & SEP
@@ -168,6 +168,20 @@ Module ModNetwork
             Packet = Packet & Player(index).Charac(i).X & SEP
             Packet = Packet & Player(index).Charac(i).Y & SEP
         Next
+        Call SendPacket(index, Packet)
+    End Sub
+
+    Public Sub SendNewCharReturn(ByVal index As Integer, ByVal charnum As Byte)
+        Dim Packet As String = ServerPacket.NewCharReturn & SEP & charnum & SEP
+
+        Packet = Packet & Player(index).Charac(charnum).Name & SEP
+        Packet = Packet & Player(index).Charac(charnum).Level & SEP
+        Packet = Packet & Player(index).Charac(charnum).Classe & SEP
+        Packet = Packet & Player(index).Charac(charnum).Sex & SEP
+        Packet = Packet & Player(index).Charac(charnum).Map & SEP
+        Packet = Packet & Player(index).Charac(charnum).X & SEP
+        Packet = Packet & Player(index).Charac(charnum).Y & SEP
+
         Call SendPacket(index, Packet)
     End Sub
 #End Region
@@ -217,7 +231,25 @@ Module ModNetwork
     End Sub
 
     Public Sub NewChar(ByVal index As Integer, ByVal Datas As String)
+        ' Récupère le corps du paquet
+        Dim Data() As String = Datas.Split(SEP)
 
+        If Not Data(2).Length < 3 Then
+            If FreeCharName(Data(2)) Then
+                With Player(index).Charac(Data(1))
+                    .Name = Data(2)
+                    .Classe = Data(3)
+                    .Sex = Data(4)
+                End With
+
+                Call SavePlayer(index)
+                File.AppendAllText("Comptes/Charlist.txt", Data(2) & vbNewLine)
+                Call ShowInfo(Player(index).Username & " a créé le personnage " & Data(2) & ".")
+                Call SendNewCharReturn(index, Data(1))
+            Else
+                Call SendMessage(index, ClientMessageType.Fatal, "Le pseudo est déjà pris !")
+            End If
+        End If
     End Sub
 #End Region
 End Module

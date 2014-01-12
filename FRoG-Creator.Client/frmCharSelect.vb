@@ -2,8 +2,11 @@
 
 Public Class frmCharSelect
 
+    Dim tmpIndex As Byte = 0
+    Dim tmpSex As Byte = 0
+    Dim Charlst(MAX_CHARS) As Collection
+
     Private Sub frmCharSelect_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-        Dim Charlst(MAX_CHARS) As Collection
 
         Charlst(0) = New Collection
         Charlst(0).Add(Name1)
@@ -35,10 +38,7 @@ Public Class frmCharSelect
 
         For i = 0 To 3
             If Not Player(MyIndex).Charac(i).Name = "" Then
-                With Player(MyIndex).Charac(i)
-                    Charlst(i).Item(1).text = .Name
-                    'TODO : Afficher les infos
-                End With
+                Call DispCharlist(i)
             Else
                 Charlst(i).Item(1).text = "Slot libre"
                 Charlst(i).Item(2).visible = False
@@ -49,12 +49,26 @@ Public Class frmCharSelect
         Next
     End Sub
 
+    Public Sub DispCharlist(ByVal charnum As Byte)
+        Charlst(charnum).Item(1).visible = True
+        Charlst(charnum).Item(2).visible = True
+        Charlst(charnum).Item(3).visible = True
+        Charlst(charnum).Item(4).visible = True
+        Charlst(charnum).Item(5).visible = True
+        Charlst(charnum).Item(4).text = "Choisir"
+
+        With Player(MyIndex).Charac(charnum)
+            Charlst(charnum).Item(1).text = .Name
+            'TODO : Afficher les infos
+        End With
+    End Sub
+
     Private Sub btSelect1_Click(sender As System.Object, e As System.EventArgs) Handles btSelect1.Click
         If Not Player(MyIndex).Charac(0).Name = "" Then
 
         Else
-            frmNewChar.Show()
-            Me.Visible = False
+            tmpIndex = 0
+            pnlNewChar.Visible = True
         End If
     End Sub
 
@@ -62,8 +76,8 @@ Public Class frmCharSelect
         If Not Player(MyIndex).Charac(1).Name = "" Then
 
         Else
-            frmNewChar.Show()
-            Me.Visible = False
+            tmpIndex = 1
+            pnlNewChar.Visible = True
         End If
     End Sub
 
@@ -71,8 +85,8 @@ Public Class frmCharSelect
         If Not Player(MyIndex).Charac(2).Name = "" Then
 
         Else
-            frmNewChar.Show()
-            Me.Visible = False
+            tmpIndex = 2
+            pnlNewChar.Visible = True
         End If
     End Sub
 
@@ -80,8 +94,20 @@ Public Class frmCharSelect
         If Not Player(MyIndex).Charac(3).Name = "" Then
 
         Else
-            frmNewChar.Show()
-            Me.Visible = False
+            tmpIndex = 3
+            pnlNewChar.Visible = True
+        End If
+    End Sub
+
+    Private Sub btOK_Click(sender As System.Object, e As System.EventArgs) Handles btOK.Click
+        If Not txtName.Text.Length < 3 Then
+            If lstClass.SelectedIndex > 0 Then
+                Call SendPacket(ClientPacket.NewChar & SEP & tmpIndex & SEP & txtName.Text & SEP & lstClass.SelectedIndex & SEP & tmpSex)
+            Else
+                Call SendPacket(ClientPacket.NewChar & SEP & tmpIndex & SEP & txtName.Text & SEP & 0 & SEP & tmpSex)
+            End If
+        Else
+            MsgBox("Le nom de votre personnage doit comporter au moins 3 carractères !", MsgBoxStyle.Critical, "Erreur")
         End If
     End Sub
 End Class

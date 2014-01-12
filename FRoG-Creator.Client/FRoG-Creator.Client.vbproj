@@ -85,12 +85,6 @@
       <DependentUpon>frmMainMenu.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmNewChar.Designer.vb">
-      <DependentUpon>frmNewChar.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmNewChar.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Modules\ModDB.vb" />
     <Compile Include="Modules\ModEnum.vb" />
     <Compile Include="Modules\ModGame.vb" />
@@ -118,9 +112,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMainMenu.resx">
       <DependentUpon>frmMainMenu.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmNewChar.resx">
-      <DependentUpon>frmNewChar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
